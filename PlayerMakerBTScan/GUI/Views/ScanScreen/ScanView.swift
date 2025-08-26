@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ScanView: View {
+    
+    let bm = BluetoothManager()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("BT")
+        }
+        .onAppear(perform: {
+            bm.startScan()
+        })
     }
 }
 
