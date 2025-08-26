@@ -11,7 +11,7 @@ struct MainView: View {
     
     var body: some View {
         NavigationStack {
-            FavoritesListView()
+            FavoritesListView(viewModel: FavoritesViewModel())
                 .navigationTitle("Favorite Devices")
         }
     }

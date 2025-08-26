@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FavoritesListView: View {
-    @State private var viewModel = FavoritesViewModel()
+    @State var viewModel: FavoritesViewModel
     
     var body: some View {
         if viewModel.favorites.isEmpty {
