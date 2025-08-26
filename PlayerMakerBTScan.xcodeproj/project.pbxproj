@@ -51,9 +51,9 @@
 		E84E001E2E5D988D004102C7 /* PlayerMakerBTScan */ = {
 			isa = PBXGroup;
 			children = (
-				E84E001F2E5D988D004102C7 /* PlayerMakerBTScanApp.swift */,
-				E84E00212E5D988D004102C7 /* ContentView.swift */,
-				E84E00232E5D9891004102C7 /* Assets.xcassets */,
+				E8DEBEA52E5D9F2000B49021 /* GUI */,
+				E8DEBEA42E5D9F1500B49021 /* App */,
+				E8DEBEA32E5D9F0B00B49021 /* Assets */,
 				E84E00252E5D9891004102C7 /* Preview Content */,
 			);
 			path = PlayerMakerBTScan;
@@ -65,6 +65,30 @@
 				E84E00262E5D9891004102C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8DEBEA32E5D9F0B00B49021 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E84E00232E5D9891004102C7 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E8DEBEA42E5D9F1500B49021 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E84E001F2E5D988D004102C7 /* PlayerMakerBTScanApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E8DEBEA52E5D9F2000B49021 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				E84E00212E5D988D004102C7 /* ContentView.swift */,
+			);
+			path = GUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
