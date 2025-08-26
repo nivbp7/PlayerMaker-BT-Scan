@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct MainView: View {
+    enum Route: Hashable {
+        case scanner
+    }
     
+    @State private var path: [Route] = []
+
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             FavoritesListView(viewModel: FavoritesViewModel())
                 .navigationTitle("Favorite Devices")
                 .toolbar {
                     ToolbarItem(placement: .bottomBar) {
-                        AddDevicesButton {
-                            print("tap")
-                        }
+                        AddDevicesButton { path.append(.scanner) }
+                    }
+                }
+                .navigationDestination(for: Route.self) { route in
+                    switch route {
+                    case .scanner: ScanView()
                     }
                 }
         }
