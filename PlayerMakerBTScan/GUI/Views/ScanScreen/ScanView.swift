@@ -15,9 +15,12 @@ struct ScanView: View {
         VStack {
             Text("BT")
         }
-        .onAppear(perform: {
+        .onAppear {
             bm.startScan()
-        })
+        }
+        .onDisappear {
+            bm.stopScan()
+        }
     }
 }
 
