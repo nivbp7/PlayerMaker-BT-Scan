@@ -34,6 +34,12 @@ final class BluetoothManager: NSObject {
         isScanning = true
         central.scanForPeripherals(withServices: nil)
     }
+    
+    func stopScan() {
+        guard isScanning else { return }
+        central.stopScan()
+        isScanning = false
+    }
 }
 
 extension BluetoothManager: CBCentralManagerDelegate {
