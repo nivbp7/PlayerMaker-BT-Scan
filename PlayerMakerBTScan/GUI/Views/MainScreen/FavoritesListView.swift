@@ -12,7 +12,7 @@ struct FavoritesListView: View {
     
     var body: some View {
         if viewModel.favorites.isEmpty {
-            Text("Empty")
+            EmptyListView()
         } else {
             List {
                 ForEach(viewModel.favorites) { device in
