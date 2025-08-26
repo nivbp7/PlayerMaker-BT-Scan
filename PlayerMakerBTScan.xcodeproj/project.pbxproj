@@ -15,6 +15,8 @@
 		E8DEBEAD2E5DA37E00B49021 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEAC2E5DA37E00B49021 /* MainView.swift */; };
 		E8DEBEAF2E5DA3E700B49021 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEAE2E5DA3E700B49021 /* RootView.swift */; };
 		E8DEBEB22E5DA6B400B49021 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEB12E5DA6B400B49021 /* FavoritesViewModel.swift */; };
+		E8DEBEB72E5DAF1D00B49021 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEB62E5DAF1D00B49021 /* FavoritesListView.swift */; };
+		E8DEBEB92E5DAF3D00B49021 /* FavoriteDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEB82E5DAF3D00B49021 /* FavoriteDeviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		E8DEBEAC2E5DA37E00B49021 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E8DEBEAE2E5DA3E700B49021 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E8DEBEB12E5DA6B400B49021 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		E8DEBEB62E5DAF1D00B49021 /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
+		E8DEBEB82E5DAF3D00B49021 /* FavoriteDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDeviceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +116,11 @@
 		E8DEBEAB2E5DA28800B49021 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8DEBEB52E5DAEE600B49021 /* Root */,
 				E8DEBEA92E5DA10800B49021 /* SplashScreenView.swift */,
 				E8DEBEAC2E5DA37E00B49021 /* MainView.swift */,
 				E8DEBEAE2E5DA3E700B49021 /* RootView.swift */,
+				E8DEBEB42E5DAE3C00B49021 /* MainScreen */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +131,22 @@
 				E8DEBEB12E5DA6B400B49021 /* FavoritesViewModel.swift */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		E8DEBEB42E5DAE3C00B49021 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E8DEBEB62E5DAF1D00B49021 /* FavoritesListView.swift */,
+				E8DEBEB82E5DAF3D00B49021 /* FavoriteDeviceView.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		E8DEBEB52E5DAEE600B49021 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +222,10 @@
 				E8DEBEB22E5DA6B400B49021 /* FavoritesViewModel.swift in Sources */,
 				E8DEBEAA2E5DA10800B49021 /* SplashScreenView.swift in Sources */,
 				E8DEBEAD2E5DA37E00B49021 /* MainView.swift in Sources */,
+				E8DEBEB72E5DAF1D00B49021 /* FavoritesListView.swift in Sources */,
 				E8DEBEA82E5DA02900B49021 /* Device.swift in Sources */,
 				E84E00202E5D988D004102C7 /* PlayerMakerBTScanApp.swift in Sources */,
+				E8DEBEB92E5DAF3D00B49021 /* FavoriteDeviceView.swift in Sources */,
 				E8DEBEAF2E5DA3E700B49021 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
