@@ -11,7 +11,7 @@ import SwiftUI
 struct PlayerMakerBTScanApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            RootView()
         }
     }
 }
