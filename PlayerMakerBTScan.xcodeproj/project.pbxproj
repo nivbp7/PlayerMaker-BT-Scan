@@ -19,6 +19,7 @@
 		E8DEBEB92E5DAF3D00B49021 /* FavoriteDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEB82E5DAF3D00B49021 /* FavoriteDeviceView.swift */; };
 		E8DEBEBB2E5DB08A00B49021 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEBA2E5DB08A00B49021 /* EmptyListView.swift */; };
 		E8DEBEBD2E5DC6CA00B49021 /* AddDevicesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEBC2E5DC6CA00B49021 /* AddDevicesButton.swift */; };
+		E8DEBEC02E5DC8AE00B49021 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEBF2E5DC8AE00B49021 /* ScanView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		E8DEBEB82E5DAF3D00B49021 /* FavoriteDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDeviceView.swift; sourceTree = "<group>"; };
 		E8DEBEBA2E5DB08A00B49021 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 		E8DEBEBC2E5DC6CA00B49021 /* AddDevicesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDevicesButton.swift; sourceTree = "<group>"; };
+		E8DEBEBF2E5DC8AE00B49021 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		E8DEBEAB2E5DA28800B49021 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E8DEBEBE2E5DC89400B49021 /* ScanScreen */,
 				E8DEBEB52E5DAEE600B49021 /* Root */,
 				E8DEBEB42E5DAE3C00B49021 /* MainScreen */,
 			);
@@ -153,6 +156,14 @@
 				E8DEBEA92E5DA10800B49021 /* SplashScreenView.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		E8DEBEBE2E5DC89400B49021 /* ScanScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E8DEBEBF2E5DC8AE00B49021 /* ScanView.swift */,
+			);
+			path = ScanScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +241,7 @@
 				E8DEBEAD2E5DA37E00B49021 /* MainView.swift in Sources */,
 				E8DEBEB72E5DAF1D00B49021 /* FavoritesListView.swift in Sources */,
 				E8DEBEA82E5DA02900B49021 /* Device.swift in Sources */,
+				E8DEBEC02E5DC8AE00B49021 /* ScanView.swift in Sources */,
 				E8DEBEBD2E5DC6CA00B49021 /* AddDevicesButton.swift in Sources */,
 				E84E00202E5D988D004102C7 /* PlayerMakerBTScanApp.swift in Sources */,
 				E8DEBEB92E5DAF3D00B49021 /* FavoriteDeviceView.swift in Sources */,
