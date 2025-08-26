@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Device {
+struct Device: Identifiable {
     let id: String
     let name: String
     var nickname: String?

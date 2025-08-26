@@ -7,6 +7,7 @@
 
 import Foundation
 
+@Observable
 final class FavoritesViewModel {
-    
+    private(set) var favorites: [Device] = []
 }

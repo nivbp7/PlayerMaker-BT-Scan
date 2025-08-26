@@ -9,10 +9,21 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            FavoritesListView()
+                .navigationTitle("Favorite Devices")
+        }
     }
 }
 
-#Preview {
-    MainView()
+struct FavoritesListView: View {
+    @State private var viewModel = FavoritesViewModel()
+    
+    var body: some View {
+        if viewModel.favorites.isEmpty {
+            Text("Empty")
+        } else {
+            Text("Devices")
+        }
+    }
 }
