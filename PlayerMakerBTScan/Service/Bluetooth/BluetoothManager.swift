@@ -7,11 +7,24 @@
 
 import Foundation
 import CoreBluetooth
+import Combine
 
 final class BluetoothManager: NSObject {
+    
+    struct DiscoveredPeripheral {
+        let name: String?
+        let rssi: NSNumber
+    }
+    
     private var central: CBCentralManager!
-    private var authorization: AuthorizationStatus = .unknown
     private var isScanning = false
+    private var authorization: AuthorizationStatus = .unknown
+    private var peripherals: [UUID: DiscoveredPeripheral] = [:]
+
+    private let discoverySubject = PassthroughSubject<Void, Never>()
+    private var cancellables = Set<AnyCancellable>()
+    
+    @Published private(set) var bluetoothDevices: [BluetoothDevice] = []
 
     enum AuthorizationStatus {
         case allowed
@@ -23,22 +36,40 @@ final class BluetoothManager: NSObject {
     override init() {
         super.init()
         central = CBCentralManager(delegate: self, queue: .main)
+        
+        discoverySubject
+            .debounce(for: .milliseconds(30), scheduler: DispatchQueue.main)
+            .sink { [weak self] in self?.publishDevices() }
+            .store(in: &cancellables)
     }
     
     func startScan() {
         beginScanning()
     }
     
-    private func beginScanning() {
-        guard central.state == .poweredOn, !isScanning else { return }
-        isScanning = true
-        central.scanForPeripherals(withServices: nil)
-    }
-    
     func stopScan() {
         guard isScanning else { return }
         central.stopScan()
         isScanning = false
+    }
+    
+    private func publishDevices() {
+        let mapped = peripherals.map { (uuid, peripheral) in
+            let name = peripheral.name ?? "N/A"
+            return BluetoothDevice(id: uuid.uuidString, name: name, rssi: peripheral.rssi)
+        }
+        
+        bluetoothDevices = mapped.sorted {
+            $0.name < $1.name
+        }
+    }
+    
+    private func beginScanning() {
+        guard central.state == .poweredOn, !isScanning else { return }
+        isScanning = true
+        peripherals.removeAll()
+        bluetoothDevices.removeAll()
+        central.scanForPeripherals(withServices: nil, options: [CBCentralManagerScanOptionAllowDuplicatesKey: true])
     }
 }
 
@@ -58,6 +89,8 @@ extension BluetoothManager: CBCentralManagerDelegate {
     }
     
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-        print(peripheral.name)
+        let name = peripheral.name ?? (advertisementData[CBAdvertisementDataLocalNameKey] as? String)
+        peripherals[peripheral.identifier] = DiscoveredPeripheral(name: name, rssi: RSSI)
+        discoverySubject.send(())
     }
 }

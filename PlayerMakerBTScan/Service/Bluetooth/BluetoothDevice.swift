@@ -8,5 +8,7 @@
 import Foundation
 
 struct BluetoothDevice {
-    
+    let id: String
+    let name: String
+    let rssi: NSNumber
 }
