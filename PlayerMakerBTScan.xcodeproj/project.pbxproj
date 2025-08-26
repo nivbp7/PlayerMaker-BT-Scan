@@ -18,6 +18,7 @@
 		E8DEBEB72E5DAF1D00B49021 /* FavoritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEB62E5DAF1D00B49021 /* FavoritesListView.swift */; };
 		E8DEBEB92E5DAF3D00B49021 /* FavoriteDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEB82E5DAF3D00B49021 /* FavoriteDeviceView.swift */; };
 		E8DEBEBB2E5DB08A00B49021 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEBA2E5DB08A00B49021 /* EmptyListView.swift */; };
+		E8DEBEBD2E5DC6CA00B49021 /* AddDevicesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEBC2E5DC6CA00B49021 /* AddDevicesButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		E8DEBEB62E5DAF1D00B49021 /* FavoritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListView.swift; sourceTree = "<group>"; };
 		E8DEBEB82E5DAF3D00B49021 /* FavoriteDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDeviceView.swift; sourceTree = "<group>"; };
 		E8DEBEBA2E5DB08A00B49021 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
+		E8DEBEBC2E5DC6CA00B49021 /* AddDevicesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDevicesButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				E8DEBEB62E5DAF1D00B49021 /* FavoritesListView.swift */,
 				E8DEBEB82E5DAF3D00B49021 /* FavoriteDeviceView.swift */,
 				E8DEBEBA2E5DB08A00B49021 /* EmptyListView.swift */,
+				E8DEBEBC2E5DC6CA00B49021 /* AddDevicesButton.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				E8DEBEAD2E5DA37E00B49021 /* MainView.swift in Sources */,
 				E8DEBEB72E5DAF1D00B49021 /* FavoritesListView.swift in Sources */,
 				E8DEBEA82E5DA02900B49021 /* Device.swift in Sources */,
+				E8DEBEBD2E5DC6CA00B49021 /* AddDevicesButton.swift in Sources */,
 				E84E00202E5D988D004102C7 /* PlayerMakerBTScanApp.swift in Sources */,
 				E8DEBEB92E5DAF3D00B49021 /* FavoriteDeviceView.swift in Sources */,
 				E8DEBEAF2E5DA3E700B49021 /* RootView.swift in Sources */,
