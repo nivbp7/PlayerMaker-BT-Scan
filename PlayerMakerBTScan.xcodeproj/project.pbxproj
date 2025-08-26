@@ -117,9 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				E8DEBEB52E5DAEE600B49021 /* Root */,
-				E8DEBEA92E5DA10800B49021 /* SplashScreenView.swift */,
-				E8DEBEAC2E5DA37E00B49021 /* MainView.swift */,
-				E8DEBEAE2E5DA3E700B49021 /* RootView.swift */,
 				E8DEBEB42E5DAE3C00B49021 /* MainScreen */,
 			);
 			path = Views;
@@ -136,6 +133,7 @@
 		E8DEBEB42E5DAE3C00B49021 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				E8DEBEAC2E5DA37E00B49021 /* MainView.swift */,
 				E8DEBEB62E5DAF1D00B49021 /* FavoritesListView.swift */,
 				E8DEBEB82E5DAF3D00B49021 /* FavoriteDeviceView.swift */,
 			);
@@ -145,6 +143,8 @@
 		E8DEBEB52E5DAEE600B49021 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				E8DEBEAE2E5DA3E700B49021 /* RootView.swift */,
+				E8DEBEA92E5DA10800B49021 /* SplashScreenView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
