@@ -20,6 +20,7 @@
 		E8DEBEBB2E5DB08A00B49021 /* EmptyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEBA2E5DB08A00B49021 /* EmptyListView.swift */; };
 		E8DEBEBD2E5DC6CA00B49021 /* AddDevicesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEBC2E5DC6CA00B49021 /* AddDevicesButton.swift */; };
 		E8DEBEC02E5DC8AE00B49021 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEBF2E5DC8AE00B49021 /* ScanView.swift */; };
+		E8DEBEC42E5DCCF400B49021 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC32E5DCCF400B49021 /* BluetoothManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E8DEBEBA2E5DB08A00B49021 /* EmptyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListView.swift; sourceTree = "<group>"; };
 		E8DEBEBC2E5DC6CA00B49021 /* AddDevicesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDevicesButton.swift; sourceTree = "<group>"; };
 		E8DEBEBF2E5DC8AE00B49021 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		E8DEBEC32E5DCCF400B49021 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		E84E001E2E5D988D004102C7 /* PlayerMakerBTScan */ = {
 			isa = PBXGroup;
 			children = (
+				E8DEBEC12E5DCCCD00B49021 /* Service */,
 				E8DEBEA62E5D9F4A00B49021 /* LocalModels */,
 				E8DEBEA52E5D9F2000B49021 /* GUI */,
 				E8DEBEA42E5D9F1500B49021 /* App */,
@@ -166,6 +169,22 @@
 			path = ScanScreen;
 			sourceTree = "<group>";
 		};
+		E8DEBEC12E5DCCCD00B49021 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E8DEBEC22E5DCCDD00B49021 /* Bluetooth */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E8DEBEC22E5DCCDD00B49021 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				E8DEBEC32E5DCCF400B49021 /* BluetoothManager.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +265,7 @@
 				E84E00202E5D988D004102C7 /* PlayerMakerBTScanApp.swift in Sources */,
 				E8DEBEB92E5DAF3D00B49021 /* FavoriteDeviceView.swift in Sources */,
 				E8DEBEAF2E5DA3E700B49021 /* RootView.swift in Sources */,
+				E8DEBEC42E5DCCF400B49021 /* BluetoothManager.swift in Sources */,
 				E8DEBEBB2E5DB08A00B49021 /* EmptyListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
