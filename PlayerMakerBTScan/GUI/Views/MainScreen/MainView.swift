@@ -13,10 +13,16 @@ struct MainView: View {
         NavigationStack {
             FavoritesListView(viewModel: FavoritesViewModel())
                 .navigationTitle("Favorite Devices")
+                .toolbar {
+                    ToolbarItem(placement: .bottomBar) {
+                        AddDevicesButton {
+                            print("tap")
+                        }
+                    }
+                }
         }
     }
 }
-
 
 #Preview {
     MainView()
