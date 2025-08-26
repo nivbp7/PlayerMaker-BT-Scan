@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
+    
     var body: some View {
         NavigationStack {
             FavoritesListView()
@@ -16,14 +17,7 @@ struct MainView: View {
     }
 }
 
-struct FavoritesListView: View {
-    @State private var viewModel = FavoritesViewModel()
-    
-    var body: some View {
-        if viewModel.favorites.isEmpty {
-            Text("Empty")
-        } else {
-            Text("Devices")
-        }
-    }
+
+#Preview {
+    MainView()
 }
