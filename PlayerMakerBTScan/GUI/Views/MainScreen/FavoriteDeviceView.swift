@@ -11,13 +11,15 @@ struct FavoriteDeviceView: View {
     let device: Device
     
     var body: some View {
-        VStack {
-            Text(device.name)
+        VStack(alignment: .leading) {
+            Text(device.shownName())
+                .font(.title3)
             Text(device.id)
+                .font(.caption)
         }
     }
 }
 
 #Preview {
-    FavoriteDeviceView(device: Device(id: "1", name: "2", nickname: "3"))
+    FavoriteDeviceView(device: Device.demoWithNickname)
 }
