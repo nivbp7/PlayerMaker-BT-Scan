@@ -29,6 +29,7 @@ final class FavoritesStore {
     }
     
     func insert(_ device: Device) {
+        guard !contains(device.id) else { return }
         let item = SavedItem(id: device.id, name: device.name, nickname: device.nickname)
         items.append(item)
         save()
@@ -39,6 +40,10 @@ final class FavoritesStore {
     }
     
     func isFavorite(_ id: String) -> Bool {
+        return contains(id)
+    }
+    
+    private func contains(_ id: String) -> Bool {
         return items.contains { $0.id == id }
     }
     
