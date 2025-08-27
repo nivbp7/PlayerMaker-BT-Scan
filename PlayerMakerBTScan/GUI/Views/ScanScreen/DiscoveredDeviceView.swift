@@ -27,6 +27,7 @@ struct DiscoveredDeviceView: View {
                 Text(device.id)
                     .font(.caption)
             }
+            Spacer()
             if isFav {
                 Image(systemName: "star.fill")
                     
