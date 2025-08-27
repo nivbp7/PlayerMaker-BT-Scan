@@ -24,6 +24,7 @@
 		E8DEBEC62E5DEDCC00B49021 /* BluetoothDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC52E5DEDCC00B49021 /* BluetoothDevice.swift */; };
 		E8DEBEC82E5EE9DC00B49021 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC72E5EE9DC00B49021 /* ScannerViewModel.swift */; };
 		E8DEBECA2E5EEBE700B49021 /* DiscoveredDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC92E5EEBE700B49021 /* DiscoveredDeviceView.swift */; };
+		E8DEBECD2E5EF9EF00B49021 /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBECC2E5EF9EF00B49021 /* FavoritesStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		E8DEBEC52E5DEDCC00B49021 /* BluetoothDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevice.swift; sourceTree = "<group>"; };
 		E8DEBEC72E5EE9DC00B49021 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 		E8DEBEC92E5EEBE700B49021 /* DiscoveredDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveredDeviceView.swift; sourceTree = "<group>"; };
+		E8DEBECC2E5EF9EF00B49021 /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 		E8DEBEC12E5DCCCD00B49021 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E8DEBECB2E5EF9DB00B49021 /* Store */,
 				E8DEBEC22E5DCCDD00B49021 /* Bluetooth */,
 			);
 			path = Service;
@@ -192,6 +195,14 @@
 				E8DEBEC52E5DEDCC00B49021 /* BluetoothDevice.swift */,
 			);
 			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		E8DEBECB2E5EF9DB00B49021 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				E8DEBECC2E5EF9EF00B49021 /* FavoritesStore.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 				E8DEBEAF2E5DA3E700B49021 /* RootView.swift in Sources */,
 				E8DEBEC42E5DCCF400B49021 /* BluetoothManager.swift in Sources */,
 				E8DEBEBB2E5DB08A00B49021 /* EmptyListView.swift in Sources */,
+				E8DEBECD2E5EF9EF00B49021 /* FavoritesStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
