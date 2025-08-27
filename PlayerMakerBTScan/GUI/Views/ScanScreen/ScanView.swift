@@ -27,5 +27,3 @@ struct ScanView: View {
         }
     }
 }
-    ScanView()
-}
