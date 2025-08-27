@@ -22,6 +22,7 @@
 		E8DEBEC02E5DC8AE00B49021 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEBF2E5DC8AE00B49021 /* ScanView.swift */; };
 		E8DEBEC42E5DCCF400B49021 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC32E5DCCF400B49021 /* BluetoothManager.swift */; };
 		E8DEBEC62E5DEDCC00B49021 /* BluetoothDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC52E5DEDCC00B49021 /* BluetoothDevice.swift */; };
+		E8DEBEC82E5EE9DC00B49021 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC72E5EE9DC00B49021 /* ScannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		E8DEBEBF2E5DC8AE00B49021 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
 		E8DEBEC32E5DCCF400B49021 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		E8DEBEC52E5DEDCC00B49021 /* BluetoothDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevice.swift; sourceTree = "<group>"; };
+		E8DEBEC72E5EE9DC00B49021 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				E8DEBEB12E5DA6B400B49021 /* FavoritesViewModel.swift */,
+				E8DEBEC72E5EE9DC00B49021 /* ScannerViewModel.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				E8DEBEB72E5DAF1D00B49021 /* FavoritesListView.swift in Sources */,
 				E8DEBEA82E5DA02900B49021 /* Device.swift in Sources */,
 				E8DEBEC02E5DC8AE00B49021 /* ScanView.swift in Sources */,
+				E8DEBEC82E5EE9DC00B49021 /* ScannerViewModel.swift in Sources */,
 				E8DEBEBD2E5DC6CA00B49021 /* AddDevicesButton.swift in Sources */,
 				E84E00202E5D988D004102C7 /* PlayerMakerBTScanApp.swift in Sources */,
 				E8DEBEB92E5DAF3D00B49021 /* FavoriteDeviceView.swift in Sources */,
