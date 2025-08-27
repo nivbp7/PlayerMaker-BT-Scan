@@ -43,6 +43,11 @@ final class FavoritesStore {
         return contains(id)
     }
     
+    func remove(_ id: String) {
+        items.removeAll{ $0.id == id }
+        save()
+    }
+    
     private func contains(_ id: String) -> Bool {
         return items.contains { $0.id == id }
     }

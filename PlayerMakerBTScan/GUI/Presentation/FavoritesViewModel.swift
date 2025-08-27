@@ -26,4 +26,8 @@ final class FavoritesViewModel {
         load()
     }
     
+    func remove(_ id: String) {
+        store.remove(id)
+    }
+    
 }

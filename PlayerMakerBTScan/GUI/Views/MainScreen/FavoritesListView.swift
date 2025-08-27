@@ -17,6 +17,13 @@ struct FavoritesListView: View {
             List {
                 ForEach(viewModel.favorites) { device in
                     FavoriteDeviceView(device: device)
+                        .swipeActions {
+                            Button(role: .destructive) {
+                                viewModel.remove(device.id)
+                            } label: {
+                                Label("Remove", systemImage: "trash")
+                            }
+                        }
                 }
             }
         }
