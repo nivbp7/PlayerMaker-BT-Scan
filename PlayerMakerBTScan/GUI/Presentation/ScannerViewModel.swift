@@ -8,21 +8,23 @@
 import Foundation
 
 final class ScannerViewModel: ObservableObject {
-    let bm = BluetoothManager()
+    let bluetoothManager: BluetoothManager
     
     @Published private(set) var devices: [BluetoothDevice] = []
     
-    init() {
-        bm.$bluetoothDevices
+    init(bluetoothManager: BluetoothManager) {
+        self.bluetoothManager = bluetoothManager
+        
+        bluetoothManager.$bluetoothDevices
             .assign(to: &$devices)
     }
     
     func startScan() {
-        bm.startScan()
+        bluetoothManager.startScan()
     }
     
     func stopScan() {
-        bm.stopScan()
+        bluetoothManager.stopScan()
     }
     
 }
