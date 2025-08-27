@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BluetoothDevice {
+struct BluetoothDevice: Identifiable {
     let id: String
     let name: String
     let rssi: NSNumber

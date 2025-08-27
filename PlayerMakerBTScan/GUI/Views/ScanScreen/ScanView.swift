@@ -9,17 +9,21 @@ import SwiftUI
 
 struct ScanView: View {
     
-    let bm = BluetoothManager()
+    @StateObject var viewModel: ScannerViewModel
     
     var body: some View {
         VStack {
-            Text("BT")
+            List {
+                ForEach(viewModel.devices) { device in
+                    Text(device.name)
+                }
+            }
         }
         .onAppear {
-            bm.startScan()
+            viewModel.startScan()
         }
         .onDisappear {
-            bm.stopScan()
+            viewModel.stopScan()
         }
     }
 }
