@@ -9,11 +9,13 @@ import Foundation
 
 final class ScannerViewModel: ObservableObject {
     private let bluetoothManager: BluetoothManager
+    private let store: FavoritesStore
     
     @Published private(set) var devices: [BluetoothDevice] = []
     
-    init(bluetoothManager: BluetoothManager) {
+    init(bluetoothManager: BluetoothManager, store: FavoritesStore) {
         self.bluetoothManager = bluetoothManager
+        self.store = store
         
         bluetoothManager.$bluetoothDevices
             .assign(to: &$devices)

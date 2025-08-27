@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RootView: View {
     @State private var isShowingSplashView = true
+    private let store = FavoritesStore()
     
     var body: some View {
         if isShowingSplashView {
@@ -19,7 +20,7 @@ struct RootView: View {
                     }
                 }
         } else {
-            MainView()
+            MainView(store: store)
         }
     }
 }

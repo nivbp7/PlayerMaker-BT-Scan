@@ -34,6 +34,10 @@ final class FavoritesStore {
         save()
     }
     
+    func favorites() -> [Device] {
+        return items.map { $0.localDevice }
+    }
+    
     private func savedItems() -> [SavedItem] {
         guard let data = defaults.data(forKey: key) else { return [] }
         let decoder = JSONDecoder()

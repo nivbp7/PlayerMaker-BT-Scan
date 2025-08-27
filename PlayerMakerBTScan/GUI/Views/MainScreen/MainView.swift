@@ -13,10 +13,15 @@ struct MainView: View {
     }
     
     @State private var path: [Route] = []
+    private let store: FavoritesStore
+    
+    init(store: FavoritesStore) {
+        self.store = store
+    }
 
     var body: some View {
         NavigationStack(path: $path) {
-            FavoritesListView(viewModel: FavoritesViewModel())
+            FavoritesListView(viewModel: FavoritesViewModel(store: store))
                 .navigationTitle("Favorite Devices")
                 .toolbar {
                     ToolbarItem(placement: .bottomBar) {
@@ -25,13 +30,13 @@ struct MainView: View {
                 }
                 .navigationDestination(for: Route.self) { route in
                     switch route {
-                    case .scanner: ScanView(viewModel: ScannerViewModel(bluetoothManager: BluetoothManager()))
+                    case .scanner: ScanView(viewModel: ScannerViewModel(bluetoothManager: BluetoothManager(), store: store))
                     }
                 }
         }
     }
 }
 
-#Preview {
-    MainView()
-}
+//#Preview {
+//    MainView()
+//}

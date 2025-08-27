@@ -9,5 +9,13 @@ import Foundation
 
 @Observable
 final class FavoritesViewModel {
-    private(set) var favorites: [Device] = []
+    private let store: FavoritesStore
+    
+    init(store: FavoritesStore) {
+        self.store = store
+    }
+    
+    func favorites() -> [Device] {
+        store.favorites()
+    }    
 }

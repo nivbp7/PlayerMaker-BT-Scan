@@ -10,12 +10,16 @@ import SwiftUI
 struct ScanView: View {
     
     @StateObject var viewModel: ScannerViewModel
+    var store = FavoritesStore()
     
     var body: some View {
         VStack {
             List {
                 ForEach(viewModel.devices) { device in
-                    DiscoveredDeviceView(device: device, isFav: false)
+                    DiscoveredDeviceView(device: device, isFav: true)
+                        .onTapGesture {
+                            store.insert(device.localDevice)
+                        }
                 }
             }
         }
