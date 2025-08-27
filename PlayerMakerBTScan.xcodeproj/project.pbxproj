@@ -23,6 +23,7 @@
 		E8DEBEC42E5DCCF400B49021 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC32E5DCCF400B49021 /* BluetoothManager.swift */; };
 		E8DEBEC62E5DEDCC00B49021 /* BluetoothDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC52E5DEDCC00B49021 /* BluetoothDevice.swift */; };
 		E8DEBEC82E5EE9DC00B49021 /* ScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC72E5EE9DC00B49021 /* ScannerViewModel.swift */; };
+		E8DEBECA2E5EEBE700B49021 /* DiscoveredDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DEBEC92E5EEBE700B49021 /* DiscoveredDeviceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		E8DEBEC32E5DCCF400B49021 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		E8DEBEC52E5DEDCC00B49021 /* BluetoothDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevice.swift; sourceTree = "<group>"; };
 		E8DEBEC72E5EE9DC00B49021 /* ScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewModel.swift; sourceTree = "<group>"; };
+		E8DEBEC92E5EEBE700B49021 /* DiscoveredDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveredDeviceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				E8DEBEBF2E5DC8AE00B49021 /* ScanView.swift */,
+				E8DEBEC92E5EEBE700B49021 /* DiscoveredDeviceView.swift */,
 			);
 			path = ScanScreen;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				E8DEBEB22E5DA6B400B49021 /* FavoritesViewModel.swift in Sources */,
 				E8DEBEAA2E5DA10800B49021 /* SplashScreenView.swift in Sources */,
 				E8DEBEAD2E5DA37E00B49021 /* MainView.swift in Sources */,
+				E8DEBECA2E5EEBE700B49021 /* DiscoveredDeviceView.swift in Sources */,
 				E8DEBEC62E5DEDCC00B49021 /* BluetoothDevice.swift in Sources */,
 				E8DEBEB72E5DAF1D00B49021 /* FavoritesListView.swift in Sources */,
 				E8DEBEA82E5DA02900B49021 /* Device.swift in Sources */,
