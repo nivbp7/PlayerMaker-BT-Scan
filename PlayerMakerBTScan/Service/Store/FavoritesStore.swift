@@ -38,6 +38,10 @@ final class FavoritesStore {
         return items.map { $0.localDevice }
     }
     
+    func isFavorite(_ id: String) -> Bool {
+        return items.contains { $0.id == id }
+    }
+    
     private func savedItems() -> [SavedItem] {
         guard let data = defaults.data(forKey: key) else { return [] }
         let decoder = JSONDecoder()

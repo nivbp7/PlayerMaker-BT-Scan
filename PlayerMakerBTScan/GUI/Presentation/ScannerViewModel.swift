@@ -29,4 +29,12 @@ final class ScannerViewModel: ObservableObject {
         bluetoothManager.stopScan()
     }
     
+    func isFavorite(_ id: String) -> Bool {
+        return store.isFavorite(id)
+    }
+    
+    func insert(device: BluetoothDevice) {
+        store.insert(device.localDevice)
+    }
+    
 }
