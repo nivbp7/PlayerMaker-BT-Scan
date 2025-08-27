@@ -8,7 +8,7 @@
 import Foundation
 
 final class ScannerViewModel: ObservableObject {
-    let bluetoothManager: BluetoothManager
+    private let bluetoothManager: BluetoothManager
     
     @Published private(set) var devices: [BluetoothDevice] = []
     
