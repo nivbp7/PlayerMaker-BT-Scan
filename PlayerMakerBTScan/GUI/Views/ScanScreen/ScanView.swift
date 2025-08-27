@@ -15,7 +15,7 @@ struct ScanView: View {
         VStack {
             List {
                 ForEach(viewModel.devices) { device in
-                    Text(device.name)
+                    DiscoveredDeviceView(device: device, isFav: false)
                 }
             }
         }

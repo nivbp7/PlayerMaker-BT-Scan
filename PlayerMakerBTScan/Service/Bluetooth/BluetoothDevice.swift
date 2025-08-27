@@ -10,9 +10,9 @@ import Foundation
 struct BluetoothDevice: Identifiable {
     let id: String
     let name: String
-    let rssi: NSNumber
+    let rssi: Int?
 }
 
 extension BluetoothDevice {
-    static let demo = BluetoothDevice(id: "3cca58c0-0e93-4493-9e01-1278d67aef1", name: "Niv's iPhone 16", rssi: NSNumber(integerLiteral: 30))
+    static let demo = BluetoothDevice(id: "3cca58c0-0e93-4493-9e01-1278d67aef1", name: "Niv's iPhone 16", rssi: 30)
 }

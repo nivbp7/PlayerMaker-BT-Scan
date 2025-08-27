@@ -56,7 +56,7 @@ final class BluetoothManager: NSObject {
     private func publishDevices() {
         let mapped = peripherals.map { (uuid, peripheral) in
             let name = peripheral.name ?? "N/A"
-            return BluetoothDevice(id: uuid.uuidString, name: name, rssi: peripheral.rssi)
+            return BluetoothDevice(id: uuid.uuidString, name: name, rssi: peripheral.rssi.intValue)
         }
         
         bluetoothDevices = mapped.sorted {

@@ -17,8 +17,12 @@ struct DiscoveredDeviceView: View {
                 HStack(alignment: .center, spacing: 20) {
                     Text(device.name)
                         .font(.title3)
-                    Text("\(device.rssi.intValue)")
-                        .font(.footnote)
+                    if let rssi = device.rssi {
+                        Text("\(rssi) dBm")
+                            .font(.footnote)
+                    } else {
+                        EmptyView()
+                    }
                 }
                 Text(device.id)
                     .font(.caption)
