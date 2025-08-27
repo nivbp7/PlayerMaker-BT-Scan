@@ -11,11 +11,19 @@ import Foundation
 final class FavoritesViewModel {
     private let store: FavoritesStore
     
+    private(set) var favorites: [Device] = []
+    
     init(store: FavoritesStore) {
         self.store = store
+        load()
     }
     
-    func favorites() -> [Device] {
-        store.favorites()
-    }    
+    private func load() {
+        favorites = store.favorites()
+    }
+    
+    func reload() {
+        load()
+    }
+    
 }
